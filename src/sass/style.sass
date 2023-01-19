@@ -5,7 +5,7 @@
 
 .container
     max-width: 950px
-    width: 96%
+    width: 90%
     margin: auto
 
 .section-title
@@ -52,7 +52,7 @@ body
 .main
     padding-top: 100px
     background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%)  
-    padding-bottom: 155px
+    padding-bottom: 80px
     &-block
         display: flex
         flex-direction: row-reverse
@@ -129,3 +129,48 @@ body
             @media (max-width: 450px)
                 max-width: 150px
                 max-height: 150px
+
+
+.offer
+    padding-top: 65px
+    background-color: $black
+    &__title
+        +bold
+        font-size: 36px
+        margin-bottom: 80px
+        @media (max-width: 450px)
+            font-size: 25px
+            
+    &__block
+        display: flex
+        flex-wrap: wrap
+    &__item
+        width: 33%
+        padding-right: 30px
+        padding-bottom: 60px
+        @media (max-width: 750px)
+            width: 50%
+            padding-right: 60px
+        @media (max-width: 480px)
+            width: 100%
+            padding-right: 80px
+        @media (max-width: 400px)
+            padding-right: 40px
+            
+            
+            
+    &-item
+        &__title
+            font-size: 24px
+            margin-top: 24px
+            margin-bottom: 16px
+            +bold
+            @media (max-width: 450px)
+                font-size: 18px
+        &__text
+            font-size: 16px
+            line-height: 28px
+            @media (max-width: 450px)
+                font-size: 14px
+        
+
