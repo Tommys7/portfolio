@@ -28,6 +28,7 @@ body
     color: #fff
     +reg
 
+
 .header
     margin-top: 55px
     &-block
@@ -40,6 +41,8 @@ body
 .socials
     &-logo
         margin-left: 20px
+        @media (max-width: 400px)
+            margin-left: 15px
         img
             width: 17px
             height: 17px
@@ -49,28 +52,45 @@ body
 .main
     padding-top: 100px
     background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%)  
+    padding-bottom: 155px
     &-block
         display: flex
         flex-direction: row-reverse
         justify-content: space-between
+        @media (max-width: 660px)
+            flex-direction: column
+            text-align: center
     &-text
         width: 50%
         display: flex
         flex-direction: column
-        justify-content: center
+        justify-content: center660px
+        @media (max-width: 660px)
+            width: 100%
+            text-align: center
         &__subtitle
             color: #FFBB01
             font-size: 24px
             margin-bottom: 14px
+            @media (max-width: 450px)
+                font-size: 1em
+                
         &__title
             +bold
             font-size: 50px
+            margin-top: 0
             margin-bottom: 20px
+            @media (max-width: 450px)
+                font-size: 1.5em
         &__desc
             max-width: 420px
             font-size: 16px
             line-height: 28px
             margin-bottom: 38px
+            @media (max-width: 660px)
+                margin: auto
+            @media (max-width: 450px)
+                font-size: 14px
         &__button
             max-width: 285px
             width: 100%
@@ -81,6 +101,10 @@ body
             background: linear-gradient(180deg, #FFD95B 0%, #F0B514 100%)
             box-shadow: 0px 4px 0px #B68500
             cursor: pointer
+            @media (max-width: 660px)
+                margin-top: 40px
+                max-width: 230px
+                max-height: 44px
         &__buttonDesc
             text-decoration: none
             +bold
@@ -88,11 +112,20 @@ body
             color: #2E2E30
     &__image
         width: 50%
-        text-align: center
+        padding-left: 20px
+        @media (max-width: 660px)
+            padding-left: 0px
+            width: 100%
+            text-align: center
         img
             max-width: 400px
             max-height: 400px
             width: 100%
             border: white 5px solid
             border-radius: 1000px
-
+            @media (max-width: 660px)
+                max-width: 200px
+                max-height: 200px
+            @media (max-width: 450px)
+                max-width: 150px
+                max-height: 150px

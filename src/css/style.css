@@ -61,6 +61,11 @@ body {
 .socials-logo {
   margin-left: 20px;
 }
+@media (max-width: 400px) {
+  .socials-logo {
+    margin-left: 15px;
+  }
+}
 .socials-logo img {
   width: 17px;
   height: 17px;
@@ -69,34 +74,68 @@ body {
 .main {
   padding-top: 100px;
   background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
+  padding-bottom: 155px;
 }
 .main-block {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+@media (max-width: 660px) {
+  .main-block {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .main-text {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center660px;
+}
+@media (max-width: 660px) {
+  .main-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .main-text__subtitle {
   color: #FFBB01;
   font-size: 24px;
   margin-bottom: 14px;
 }
+@media (max-width: 450px) {
+  .main-text__subtitle {
+    font-size: 1em;
+  }
+}
 .main-text__title {
   font-family: "Roboto Bold", sans-serif;
   font-weight: 700px;
   font-size: 50px;
+  margin-top: 0;
   margin-bottom: 20px;
+}
+@media (max-width: 450px) {
+  .main-text__title {
+    font-size: 1.5em;
+  }
 }
 .main-text__desc {
   max-width: 420px;
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 38px;
+}
+@media (max-width: 660px) {
+  .main-text__desc {
+    margin: auto;
+  }
+}
+@media (max-width: 450px) {
+  .main-text__desc {
+    font-size: 14px;
+  }
 }
 .main-text__button {
   max-width: 285px;
@@ -109,6 +148,13 @@ body {
   box-shadow: 0px 4px 0px #B68500;
   cursor: pointer;
 }
+@media (max-width: 660px) {
+  .main-text__button {
+    margin-top: 40px;
+    max-width: 230px;
+    max-height: 44px;
+  }
+}
 .main-text__buttonDesc {
   text-decoration: none;
   font-family: "Roboto Bold", sans-serif;
@@ -118,7 +164,14 @@ body {
 }
 .main__image {
   width: 50%;
-  text-align: center;
+  padding-left: 20px;
+}
+@media (max-width: 660px) {
+  .main__image {
+    padding-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
 }
 .main__image img {
   max-width: 400px;
@@ -126,4 +179,16 @@ body {
   width: 100%;
   border: white 5px solid;
   border-radius: 1000px;
+}
+@media (max-width: 660px) {
+  .main__image img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+@media (max-width: 450px) {
+  .main__image img {
+    max-width: 150px;
+    max-height: 150px;
+  }
 }/*# sourceMappingURL=style.css.map */
