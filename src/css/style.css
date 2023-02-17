@@ -345,9 +345,15 @@ p {
 .slider__title h4 {
   margin-top: 0;
 }
-.slider__image img {
-  max-width: 400px;
+.slider__image {
+  max-width: 337px;
   width: 100%;
+  max-height: 268px;
+}
+.slider__image img {
+  max-width: 337px;
+  width: 100%;
+  max-height: 268px;
   border-radius: 10px;
 }
 .slider-info__date {
